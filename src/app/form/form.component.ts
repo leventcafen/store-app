@@ -23,8 +23,6 @@ export class FormComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    console.log('EDITCOMPONENT.ngOninit');
-    console.log('EDITCOMPONENT.selectedTodo');
     this.formSubscription.add(
       this.selectedTodo.subscribe(todo => {
         if (todo) {
